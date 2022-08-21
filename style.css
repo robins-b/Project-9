@@ -133,13 +133,14 @@ nav{
 
 .blog-card{
   display: flex;
+  flex-wrap: wrap;
   width: 40%;
   box-shadow: 5px 5px 5px grey;
 }
 
 .blog-content{
   position: relative;
-  top: 40px;
+  top: 0px;
   left: 40px;
 }
 
@@ -278,4 +279,201 @@ nav{
   justify-content: space-between;
   color: #f5f5f5;
   font-size: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav{
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 450px;
+    color: #f5f5f5;
+  }
+  .logo{
+    position: relative;
+    left: 4%;
+    top: 20px;
+  }
+
+  nav a:nth-child(1),nav a:nth-child(2),nav a:nth-child(3),nav a:nth-child(4),nav a:nth-child(5){
+    display: none;
+  }
+  nav a:nth-child(6){
+    margin-right: 10px;
+  }
+  .header-image{
+    display: none;
+  }
+  .header-text{
+    position: relative;
+    top: 30%;
+    left: 4%;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .companies{
+    position: relative;
+    display: flex;
+    top: 670px;
+    width: 100vw;
+    margin-left: 4%;
+    justify-content: space-between;
+  }
+  .company-items{
+    font-size: 15px;
+    font-family: Righteous;
+    text-decoration: none;
+    padding: 0;
+    color: #030303;
+    width: 100vw;
+  }
+  .cards{
+    position: relative;
+    top: 50px;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog-cards{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 900px;
+    left: -100px;
+    width: 500px;
+    justify-content: space-around;
+  }
+  .blog-image img{
+    height: 345px;
+  }
+  .blog-card{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px grey;
+  }
+  .blog-author{
+    position: relative;
+    top: -15px;
+    left: 50px;
+  }
+  .blog-content{
+    position: relative;
+    top: 0px;
+    left: 40px;
+  }
+  .blog-bottom{
+    position: relative;
+    top: 15px;
+    right: -40px;
+  }
+  .faq-section{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    justify-content: space-between;
+    top: 1300px;
+    width: 100%;
+  }
+  .faq-image img{
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .faq-content{
+    position: relative;
+    top: 0px;
+    left: 40px;
+  }
+  
+  .faq-content h2{
+    font-size: 25px;
+  }
+  
+  .faq-content h4{
+    font-size: 13px;
+    width: 800px;
+  }
+  
+  .faq-content h4:nth-child(3){
+    position: relative;
+    top: 0px;
+    font-size: 20px;
+  }
+  
+  .faq-content button{
+    position: relative;
+    top: -10px;
+    padding: 5px 20px;
+    background-color: rgb(72, 52, 185);
+    color: #f5f5f5;
+    border: none;
+  }
+  .download-section{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    top: 1350px;
+    right: 70px;
+    justify-content: space-between;
+  }
+  
+  .download-content span{
+    font-weight: 100;
+  }
+  
+  .download-email button{
+    position: relative;
+    right: 0px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(72, 52, 185);
+    color: #f5f5f5;
+    border-radius: 20px;
+  }
+  
+  .download-email input{
+    padding: 10px 20px;
+    width: 350px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+  }
+  .footer-section{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 0 100px;
+    padding-top: 70px;
+    top: 1500px;
+    background-color: rgb(72, 52, 185);
+  }
+  .list-items{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1700px){
+  .blog-cards{
+    display: flex;
+    position: relative;
+    top: 900px;
+    left: -50px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .blog-card{
+    display: flex;
+    width: 700px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px grey;
+  }
 }
